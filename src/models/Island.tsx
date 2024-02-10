@@ -12,12 +12,15 @@ import { useEffect, useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
 import { a } from '@react-spring/three'
 
-import islandScene from '../assets/3d/island.glb'
+import islandScene from '../assets/3d/island.glb?url'
 
 interface Props {
   isRotating: boolean
   setIsRotating: React.Dispatch<React.SetStateAction<boolean>>
   setCurrentStage: React.Dispatch<React.SetStateAction<number>>
+  position: number[]
+  scale: number[]
+  rotation: number[]
 }
 
 export const Island = ({

@@ -1,10 +1,13 @@
 import { useEffect, useRef } from 'react'
 import { useAnimations, useGLTF } from '@react-three/drei'
 
-import planeScene from '../assets/3d/plane.glb'
+import planeScene from '../assets/3d/plane.glb?url'
 
 interface Props {
   isRotating: boolean
+  planeScale: number[]
+  planePosition: number[]
+  rotation: number[]
 }
 
 export const Plane = ({ isRotating, ...props }: Props) => {
