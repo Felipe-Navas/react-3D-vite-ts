@@ -17,9 +17,15 @@ import islandScene from '../assets/3d/island.glb'
 interface Props {
   isRotating: boolean
   setIsRotating: React.Dispatch<React.SetStateAction<boolean>>
+  setCurrentStage: React.Dispatch<React.SetStateAction<number>>
 }
 
-export const Island = ({ isRotating, setIsRotating, ...props }: Props) => {
+export const Island = ({
+  isRotating,
+  setIsRotating,
+  setCurrentStage,
+  ...props
+}: Props) => {
   const islandRef = useRef({
     rotation: {
       y: 0,
@@ -128,7 +134,8 @@ export const Island = ({ isRotating, setIsRotating, ...props }: Props) => {
           setCurrentStage(1)
           break
         default:
-          setCurrentStage(null)
+          //setCurrentStage(null)
+          setCurrentStage(0)
       }
     }
   })
