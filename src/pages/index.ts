@@ -1,6 +1,4 @@
-import About from './About'
-import Contact from './Contact'
-import Home from './Home'
-import Projects from './Projects'
-
-export { About, Contact, Home, Projects }
+export { About } from './About'
+export { Contact } from './Contact'
+export { Home } from './Home'
+export { Projects } from './Projects'

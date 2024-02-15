@@ -1,18 +1,10 @@
-import { Canvas } from '@react-three/fiber'
 import { Suspense, useState } from 'react'
+import { Canvas } from '@react-three/fiber'
 
 import { Loader } from '../components/Loader'
-import { Island } from '../models/Island'
-import { Sky } from '../models/Sky'
-import { Bird } from '../models/Bird'
-import { Plane } from '../models/Plane'
+import { Bird, Island, Plane, Sky } from '../models'
 
-{
-  /* <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
-  TEST-POPUP
-</div> */
-}
-const Home = () => {
+export const Home = () => {
   const [isRotating, setIsRotating] = useState(false)
   const [currentStage, setCurrentStage] = useState(1)
 
@@ -51,6 +43,9 @@ const Home = () => {
 
   return (
     <section className="w-full h-screen relative">
+      <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
+        TEST-POPUP
+      </div>
       <Canvas
         className={`w-full h-screen bg-transparent ${
           isRotating ? 'cursor-grabbing' : 'cursor-grab'
@@ -84,5 +79,3 @@ const Home = () => {
     </section>
   )
 }
-
-export default Home
