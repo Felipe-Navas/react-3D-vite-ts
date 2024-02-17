@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# README #
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This README would normally document whatever steps are necessary to get the application up and running.
 
-Currently, two official plugins are available:
+### What is this repository for? ###
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Quick summary
+    * A TypeScript React.js app using Three.js
+* Version: 1.0
+* [Author](https://www.linkedin.com/in/felipenavaslederhos)
 
-## Expanding the ESLint configuration
+### How do I get set up? ###
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* Summary of set up
+    * ```npm install```
 
-- Configure the top-level `parserOptions` property like this:
+* How to run the app?
+    * ```npm start```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+* How to run the tests?
+    * Run the test: ```npm test```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contribution guidelines
+
+- Writing tests
+- Code review
+- Other guidelines
+
+## Who do I talk to?
+
+- Repo owner or admin
+- Other community or team contact
+
+### Proview of the website:
+
+![alt text](image.png)
