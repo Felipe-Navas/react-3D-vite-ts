@@ -34,7 +34,3 @@ This README would normally document whatever steps are necessary to get the appl
 - Other community or team contact
 
 ### Preview of the website:
-
-<video controls>
-  <source src="Demo.mp4" type="video/mp4">
-</video>
