@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber'
 import { Fox } from '../models'
 import { Loader } from '../components'
+import { useAlert } from '../hooks/useAlert'
+import { Alert } from '../components/Alert'
 
 export const Contact = () => {
   const formRef = useRef(null)
@@ -12,17 +14,24 @@ export const Contact = () => {
     message: '',
   })
   const [isLoading, setIsLoading] = useState(false)
+  const [currentAnimation, setCurrentAnimation] = useState('idle')
+
+  const { alert, showAlert, hideAlert } = useAlert()
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
-  const handleFocus = () => {}
-  const handleBlur = () => {}
+  const handleFocus = () => setCurrentAnimation('walk')
+
+  const handleBlur = () => setCurrentAnimation('idle')
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
+    setCurrentAnimation('hit')
+
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -38,19 +47,26 @@ export const Contact = () => {
       )
       .then(() => {
         setIsLoading(false)
-        // TODO: Add a message
+        showAlert({ text: 'Message sent successfully!', type: 'success' })
 
-        setForm({ name: '', email: '', message: '' })
+        setTimeout(() => {
+          hideAlert()
+          setCurrentAnimation('idle')
+          setForm({ name: '', email: '', message: '' })
+        }, 3000)
       })
       .catch((error) => {
         setIsLoading(false)
         console.log(error)
-        // TODO: Show error message
+        setCurrentAnimation('idle')
+        showAlert({ text: 'I did not receive your message!', type: 'danger' })
       })
   }
 
   return (
     <section className="realtive flex lg:flex-row flex-col max-container">
+      {alert.show && <Alert {...alert} />}
+      <Alert text="Prueba" type="danger" />
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
         <form
@@ -116,6 +132,7 @@ export const Contact = () => {
           <ambientLight intensity={0.5} />
           <Suspense fallback={<Loader />}>
             <Fox
+              currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
               rotation={[12.6, 0.6, 0]}
               scale={[0.5, 0.5, 0.5]}
