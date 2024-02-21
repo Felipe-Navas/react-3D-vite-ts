@@ -1,4 +1,4 @@
-import { ChangeEvent, useRef, useState, Suspense } from 'react'
+import { ChangeEvent, useState, Suspense } from 'react'
 import emailjs from '@emailjs/browser'
 import { Canvas } from '@react-three/fiber'
 import { Fox } from '../models'
@@ -7,7 +7,6 @@ import { useAlert } from '../hooks/useAlert'
 import { Alert } from '../components/Alert'
 
 export const Contact = () => {
-  const formRef = useRef(null)
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -66,7 +65,7 @@ export const Contact = () => {
   return (
     <section className="realtive flex lg:flex-row flex-col max-container">
       {alert.show && <Alert {...alert} />}
-      <Alert text="Prueba" type="danger" />
+
       <div className="flex-1 min-w-[50%] flex flex-col">
         <h1 className="head-text">Get in Touch</h1>
         <form
