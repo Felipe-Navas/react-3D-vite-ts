@@ -5,8 +5,8 @@ import planeScene from '../assets/3d/plane.glb?url'
 
 interface Props {
   isRotating: boolean
-  planeScale: number[]
-  planePosition: number[]
+  scale: number[]
+  position: number[]
   rotation: number[]
 }
 

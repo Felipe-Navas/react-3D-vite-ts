@@ -55,7 +55,6 @@ export const Home = () => {
         <Suspense fallback={<Loader />}>
           <directionalLight position={[1, 1, 1]} intensity={2} />
           <ambientLight intensity={0.5} />
-          {/* <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1} /> */}
           <hemisphereLight groundColor="#000000" intensity={1} />
 
           <Bird />
@@ -69,8 +68,8 @@ export const Home = () => {
             setCurrentStage={setCurrentStage}
           />
           <Plane
-            planeScale={planeScale}
-            planePosition={planePosition}
+            scale={planeScale}
+            position={planePosition}
             isRotating={isRotating}
             rotation={[0, 20, 0]}
           />
