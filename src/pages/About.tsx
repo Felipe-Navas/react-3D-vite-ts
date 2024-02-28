@@ -16,6 +16,7 @@ export const About = () => {
           Felipe
         </span>
       </h1>
+
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
           Software Engineer based in Argentina, Seasoned, forward-looking with
@@ -23,6 +24,7 @@ export const About = () => {
           Node.js, and TypeScript.
         </p>
       </div>
+
       <div className="py-10 flex flex-col">
         <h3 className="subhead-text">My Skills</h3>
 
@@ -50,6 +52,7 @@ export const About = () => {
             teaming up with smart people. Here's the rundown:
           </p>
         </div>
+
         <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience) => (
@@ -101,7 +104,7 @@ export const About = () => {
           </VerticalTimeline>
         </div>
       </div>
-      <hr className='border-slate-200' />
+      <hr className="border-slate-200" />
 
       <Cta />
     </section>
