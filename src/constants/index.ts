@@ -192,49 +192,49 @@ export const projects = [
   {
     iconUrl: pricewise,
     theme: 'btn-back-red',
-    name: 'Amazon Price Tracker',
+    name: 'TypeScript Rest Server',
     description:
-      'Developed a web application that tracks and notifies users of price changes for products on Amazon, helping users find the best deals.',
-    link: 'https://github.com/adrianhajdin/pricewise',
+      'Rest server applying CLEAN architecture using: Node + Typescript + MongoDB + Docker + Express + JWT + CLEAN.',
+    link: 'https://github.com/Felipe-Navas/ts-rest-server-clean',
   },
   {
     iconUrl: threads,
     theme: 'btn-back-green',
-    name: 'Full Stack Threads Clone',
+    name: 'Nest Mongo',
     description:
-      'Created a full-stack replica of the popular discussion platform "Threads," enabling users to post and engage in threaded conversations.',
-    link: 'https://github.com/adrianhajdin/threads',
+      'A Nest.js server with mongoDB.',
+    link: 'https://github.com/Felipe-Navas/nest-mongo',
   },
   {
     iconUrl: car,
     theme: 'btn-back-blue',
-    name: 'Car Finding App',
+    name: 'React Journal App',
     description:
-      'Designed and built a mobile app for finding and comparing cars on the market, streamlining the car-buying process.',
-    link: 'https://github.com/adrianhajdin/project_next13_car_showcase',
+      'React app for Journal with vite.',
+    link: 'https://github.com/Felipe-Navas/react-journal-app-vite',
   },
   {
     iconUrl: snapgram,
     theme: 'btn-back-pink',
-    name: 'Full Stack Instagram Clone',
+    name: 'React Spa Heroes',
     description:
-      'Built a complete clone of Instagram, allowing users to share photos and connect with friends in a familiar social media environment.',
-    link: 'https://github.com/adrianhajdin/social_media_app',
+      'A React Spa App with vite.',
+    link: 'https://github.com/Felipe-Navas/react-spa-heroes-vite',
   },
   {
     iconUrl: estate,
     theme: 'btn-back-black',
-    name: 'Real-Estate Application',
+    name: 'React Spa App Gif',
     description:
-      'Developed a web application for real estate listings, facilitating property searches and connecting buyers with sellers.',
-    link: 'https://github.com/adrianhajdin/projects_realestate',
+      'A React gif app with vite.',
+    link: 'https://github.com/Felipe-Navas/react-gif-app-vite',
   },
   {
     iconUrl: summiz,
     theme: 'btn-back-yellow',
-    name: 'AI Summarizer Application',
+    name: 'My Storybook App',
     description:
-      'App that leverages AI to automatically generate concise & informative summaries from lengthy text content, or blogs.',
-    link: 'https://github.com/adrianhajdin/project_ai_summarizer',
+      'A React app for components using storybook.',
+    link: 'https://github.com/Felipe-Navas/my-storybook',
   },
 ]
