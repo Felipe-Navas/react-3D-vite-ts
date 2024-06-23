@@ -1,36 +1,72 @@
-# README
+# React 3D Vite Ts
 
-This README would normally document whatever steps are necessary to get the application up and running.
+A TypeScript React.js app using Three.js
 
-### What is this repository for?
+## Description
 
-- Quick summary
-  - A TypeScript React.js app using Three.js
-- Version: 1.0
-- [Author](https://www.linkedin.com/in/felipenavaslederhos)
+A React app written in TypeScript where I am using Three.js
 
-### How do I get set up?
+## Demo
 
-- Summary of set up
+You can explore a live version of React 3D Vite Ts at the following URL:
 
-  - `npm install`
+https://Felipe-Navas.github.io/react-3d-vite-ts
 
-- How to run the app?
+## Getting Started
 
-  - `npm start`
+### Dependencies
 
-- How to run the tests?
-  - Run the test: `npm test`
+- `npm`
+- `node`
 
-## Contribution guidelines
+### Installing
 
-- Writing tests
-- Code review
-- Other guidelines
+- Clone the repository and install dependencies:
 
-## Who do I talk to?
+```
+git clone https://github.com/Felipe-Navas/react-3d-vite-ts.git && cd react-3d-vite-ts && npm install
+```
 
-- Repo owner or admin
-- Other community or team contact
+### Executing program
 
-### Preview of the website:
+```
+npm start
+```
+
+Preview of the main screen:
+
+<img width="350" src="assets/MainScreen.png" alt="Preview of the main screen" />
+
+Preview of the about screen:
+
+<img width="350" src="assets/AboutScreen.png" alt="Preview of the about screen" />
+
+Preview of the projects screen:
+
+<img width="350" src="assets/ProjectsScreen.png" alt="Preview of the projects screen" />
+
+Preview of the contact screen:
+
+<img width="350" src="assets/ContactScreen.png" alt="Preview of the contact screen" />
+
+### Running tests
+
+```
+npm test
+```
+
+## Authors
+
+- [Felipe Navas](https://www.linkedin.com/in/felipenavaslederhos) - [Email](mailto:felipenavas.itec@gmail.com?subject=[GitHub]%react-3d-vite-ts)
+
+## Contributing
+
+1. Fork it (<https://github.com/Felipe-Navas/react-3d-vite-ts/fork>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the [MIT License] - see the LICENSE file for details
