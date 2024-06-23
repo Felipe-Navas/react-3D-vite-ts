@@ -1,10 +1,22 @@
 {
   "name": "react-3d-vite-ts",
-  "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A TypeScript React.js app using Three.js",
+  "main": "/src/main.tsx",
+  "author": "Felipe Navas",
+  "license": "MIT",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Felipe-Navas/react-3d-vite-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Felipe-Navas/react-3d-vite-ts/issues"
+  },
+  "homepage": "https://Felipe-Navas.github.io/react-3d-vite-ts",
   "scripts": {
     "start": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
