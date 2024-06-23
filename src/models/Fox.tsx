@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import scene from '../assets/3d/fox.glb?url'
 
-export const Fox = ({ currentAnimation, ...props }) => {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF(scene)
+export const Fox = ({ currentAnimation, ...props }: any) => {
+  const group = useRef<any>()
+  const { nodes, materials, animations }: any = useGLTF(scene)
   const { actions } = useAnimations(animations, group)
 
   useEffect(() => {

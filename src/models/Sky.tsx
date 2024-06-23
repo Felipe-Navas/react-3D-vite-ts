@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
@@ -10,7 +11,7 @@ interface Props {
 
 export const Sky = ({ isRotating }: Props) => {
   const sky = useGLTF(skyScene)
-  const skyRef = useRef({
+  const skyRef = useRef<any>({
     rotation: {
       y: 0,
     },

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useRef } from 'react'
 import { useAnimations, useGLTF } from '@react-three/drei'
 
@@ -11,7 +12,7 @@ interface Props {
 }
 
 export const Plane = ({ isRotating, ...props }: Props) => {
-  const ref = useRef()
+  const ref = useRef<any>()
   const { scene, animations } = useGLTF(planeScene)
   const { actions } = useAnimations(animations, ref)
 

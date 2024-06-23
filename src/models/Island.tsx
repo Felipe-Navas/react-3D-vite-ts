@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useGLTF } from '@react-three/drei'
 import { useEffect, useRef } from 'react'
 import { useFrame, useThree } from '@react-three/fiber'
@@ -20,14 +21,14 @@ export const Island = ({
   setCurrentStage,
   ...props
 }: Props) => {
-  const islandRef = useRef({
+  const islandRef = useRef<any>({
     rotation: {
       y: 0,
     },
   })
 
   const { gl, viewport } = useThree()
-  const { nodes, materials } = useGLTF(islandScene)
+  const { nodes, materials }: any = useGLTF(islandScene)
 
   const lastX = useRef(0)
   const rotationSpeed = useRef(0)

@@ -5,6 +5,7 @@ import birdScene from '../assets/3d/bird.glb?url'
 import { useFrame } from '@react-three/fiber'
 
 export const Bird = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const birdRef = useRef<any>()
   const { scene, animations } = useGLTF(birdScene)
   const { actions } = useAnimations(animations, birdRef)
